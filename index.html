@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gold-Car</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navigation">
+          <img src="./public/Logo.svg" alt="" class="navigation__logo" />
+          <ul class="navigation__list">
+            <li class="navigation__list-item">
+              <a href="" class="navigation__list-item-link"> Главное </a>
+            </li>
+            <li class="navigation__list-item">
+              <a href="" class="navigation__list-item-link"> О нас </a>
+            </li>
+            <li class="navigation__list-item">
+              <a href="" class="navigation__list-item-link"> Выбор авто </a>
+            </li>
+            <li class="navigation__list-item">
+              <a href="" class="navigation__list-item-link"> Контакты </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="promo">
+        <div class="container">
+          <div class="promo__title">
+            <h1>АРЕНДУЙ МАШИНУ ДЛЯ ЛЮБЫХ ЦЕЛЕЙ</h1>
+          </div>
+
+          <div class="row">
+            <!--                офсет-1 пропускает одну (если 2 то две и тд) колонку слева как у вас в макете-->
+            <div class="offset-1 col-5">
+              <p>От 1200 руб. за сутки!</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="offset-2 col-3">
+              <button>Подробнее</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="offset-8 col-4">
+              <img src="./public/Promo-logo.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="filter">
+        <div class="container">
+          <div class="row">
+            <div class="offset-1 col-2">
+              <select>
+                <option value="">Выбрать тип</option>
+                <option value="sedan">Седан</option>
+                <option value="crossover">Кроссовер</option>
+                <option value="pickup">Пикап</option>
+              </select>
+            </div>
+            <!-- </div> -->
+            <!-- <div class="row"> -->
+            <div class="offset-1 col-2">
+              <select>
+                <option value="">Выбрать период</option>
+                <option>1-3 дней</option>
+                <option>4-8 дней</option>
+                <option>17-25 дней</option>
+                <option>25+ дней</option>
+                <option>1-3 часа</option>
+                <option>4-8 часов</option>
+                <option>9-16 дней</option>
+              </select>
+            </div>
+            <div class="offset-1 col-2">
+              <button>
+                <p class="filter__button">Подобрать авто</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="description">
+        <div class="container">
+          <div class="description__title">
+            <h1>Выгодное предложение для предпринимателей</h1>
+          </div>
+          <div class="description__title-2">
+            <h2>Мы готовы приобрести автомобиль специально для вас!</h2>
+          </div>
+          <div class="description_text">
+            <p>
+              Позвольте вашему бизнесу развиваться быстрее, используя новую
+              технику, которая подходит именно для ваших целей.
+            </p>
+            <p>Страховка и обслуживание за наш счет!</p>
+            <p>Особые условия для коммерческого транспорта.</p>
+          </div>
+        </div>
+      </div>
+      <div class="car">
+        <div class="container">
+          <h1>ВЫБОР АВТОМОБИЛЕЙ</h1>
+          <div class="row">
+            <div class="offset-3 col-6">
+              <div class="car__title">
+                <h2>Популярные авто</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="offset-1 col-5">
+              <div class car__car1>
+                <img src="./public/Kia Rio.svg" alt="" />
+                <p class="car__name">
+                  Kia<br />
+                  Rio
+                </p>
+                <p class="car__description">Лучшее<br> соотношение<br> цена/качество</p>
+                <p class="car__characteristic-price">1200 р/сут</p>
+                <p class="car__characteristic-transmission">Акпп</p>
+                <p class="car__characteristic-doors">4 двери</p>
+                <p class="car__characteristic-drive">Передний привод</p>
+                <p class="car__characteristic-type">Седан</p>
+              </div>
+            </div>
+
+            <div class="offset-1 col-5">
+              <div class car__car1>
+                <img src="./public/Hyundai Solaris.svg" alt="" />
+                <p class="car__name">Hyundai<br> Solaris</p>
+                <p class="car__description">
+                  Комфортабельный<br> седан<br> эконом-класса
+                </p>
+                <p class="car__characteristic-price">1600 р/сут</p>
+                <p class="car__characteristic-transmission">Акпп</p>
+                <p class="car__characteristic-doors">4 двери</p>
+                <p class="car__characteristic-drive">Передний привод</p>
+                <p class="car__characteristic-type">Седан</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="offset-1 col-5">
+                <div class car__car1>
+                  <img src="./public/Hyundai Creta.svg" alt="" />
+                  <p class="car__name">
+                    Hyundai<br />
+                    Creta
+                  </p>
+                  <p class="car__description">
+                    Лучшее<br> соотношение<br> цена/качество
+                  </p>
+                  <p class="car__characteristic-price">1900 р/сут</p>
+                  <p class="car__characteristic-transmission">Акпп</p>
+                  <p class="car__characteristic-doors">5 двери</p>
+                  <p class="car__characteristic-drive">Полный привод</p>
+                  <p class="car__characteristic-type">Кроссовер</p>
+                </div>
+              </div>
+              <div class="offset-1 col-5">
+                <div class car__car1>
+                  <img src="./public/Mitsubishi L200.svg" alt="" />
+                  <p class="car__name">Mitsubishi <br> L200</p>
+                  <p class="car__description">Вместительный,<br> мощный и<br> надежный пикап</p>
+                  <p class="car__characteristic-price">2600 р/сут</p>
+                  <p class="car__characteristic-transmission">Мкпп</p>
+                  <p class="car__characteristic-doors">4 двери</p>
+                  <p class="car__characteristic-drive">Полный привод</p>
+                  <p class="car__characteristic-type">Пикап</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feedback">
+        <div class="container">
+            <div class="feedback__title">
+                <h1>ЗАЯВКА НА ЗВОНОК</h1>
+            </div>
+            <div class="feedback__description">
+                <p>Оставьте контакты и менеджер свяжется с вами</p>
+            </div>
+            <div class="row">
+                <div class="offset-3 col-2">
+                    <input type="text" placeholder="Имя">
+                </div>
+                <div class="offset-1 col-2">
+                    <input type="text" placeholder="Номер телефона">
+                </div>
+                <div class="offset-1 col-1">                                                         
+                    <body>                     
+                        <div id="zatemnenie">
+                            <div id="okno">
+                              Оператор скоро Вам перезвонит!<br>
+                              <a href="#" class="close">Закрыть окно</a>
+                            </div>
+                          </div>
+                           
+                          
+                    <button class="feedback__window-button" href="#zatemnenie"><a class="feedback__window-button-text" href="#zatemnenie">></a></button>
+                </div>
+            </div>
+        </div>
+      </div>
+    </main>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <h1>О нас</h1>
+                <p>Новая компания «Голд-Кар»! Команда с большим опытом работы в предоставлении услуг в транспортной индустрии. 
+                    Новые тарифы, новые автомобили. Наше преимущество: клиентоориентированность, индивидуальный подход к каждому клиенту, 
+                    стремление быть лучшими на рынке оказания услуг.</p>
+            </div>
+            <div class="offset-1 col-3">
+                <h1>Рабочее время</h1>
+                <p>Доставка: <br> Круглосуточно</p>
+                <p>Аренда авто: <br> 9:00 - 20:00 Ежедневно</p>
+            </div>
+                <div class="offset-1 col-4">
+                <h1>Контакты</h1>
+                <p><img src="./public/footer-phone.svg" alt="">+7(3466)43-12-54</p>
+                <p>+7(3466)43-14-54</p>
+                
+                <p><img src="./public/footer-whatsup.png" alt="">+7(922)251-22-61 - Duo</p>
+                <p>+7(922)251-22-61 - Viber</p>
+                
+                <p><img src="./public/footer-vk.png" alt="">vk.com/autovarendusgt</p>
+                
+                <p><img src="./public/footer-geo.png" alt="">628416, ул Ленина 1</p>
+                
+                <p><img src="./public/footer-mail.png" alt="">inf@gold-car.com</p>            
+            </div>
+        </div>
+    </div>
+</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

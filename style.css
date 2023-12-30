@@ -1,0 +1,311 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    position: relative; /*нужно есть дочерний эл-т с абсолютным позиционированием*/
+}
+
+/*лого располагаем относительно родителя (nav с классом navigation)*/
+.navigation__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.navigation__list {
+    display: flex;
+    align-items: center;
+    grid-gap: 44px;
+    /*расположим ссылки справа*/
+    margin-left: auto;
+    margin-right: 0;
+    /*делаем внутренние отступы*/
+    padding: 20px 0;
+}
+
+.navigation__list-item {
+    font-size: 24px;
+}
+
+.navigation__list-item-link {
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation__list-item-link:hover {
+    text-decoration: underline;
+}
+
+header {
+    /*не стоит 1 в 1 копировать стили для фона из фигмы, они редко получаются такими какими мы хотим их видеть, lightgray не нужен*/
+    background: url("./public/Header-Background.svg") no-repeat 50% 50%;
+    /*растянем бэкграунд чтобы не было белых полосок сверху и снизу из-за нашего padding у класса .navigation__list */
+    background-size: cover;
+}
+
+.promo {
+    padding: 150px 0;
+    padding-bottom: 5px;
+    background: url("./public/promo-bg.jpg") center no-repeat;
+}
+
+.promo__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.promo h1 {
+    font-size: 48px;
+    font-weight: 600;
+    background: url("./public/promo-title-bg.png") center no-repeat;
+    display: inline-block;
+    padding: 15px 55px;
+    background-size: cover;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+/*просто оранжевый фон будет лучше смотреться и если фон с машинами съедет то текст все равно будет чиаться*/
+.promo p {
+    background: #FF7900;
+    padding: 8px 20px;
+    display: inline-block;
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.promo button {
+    background: linear-gradient(180deg, #FF7900 0%, #FFD400 100%);
+    border: 1px solid black;
+    padding: 8px 30px;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.promo button:hover{
+    transform: scale(1.05);
+}
+
+.filter{
+    
+    background: url("./public/Filter-Background.svg") center no-repeat;
+}
+.filter select{
+    width: 229.011px;
+    height: 54.478px;
+    margin: 67px 0;
+    padding: 15px ;
+    background: #1c1d1e;
+    font-size: 20px;
+    font-weight: 300;
+    color: #FFFFFF66;
+    border-radius: 10px;
+}
+ /* .row{
+    margin-left: 0;
+}  */
+.filter button{
+    background: url("./public/Filter-button.svg");
+    width: 183px;
+    height: 53.53px;
+    margin: 67px 0;
+    padding: 15px ;
+    font-size: 16px;
+    font-weight: 300;
+    color: #FFFFFF;
+    border-radius: 10px;
+    align-items: center;
+}
+.filter__button{
+    align-self: auto;
+}
+.description{
+    padding-bottom: 100px;
+    background: url("./public/Description-bg.svg") center no-repeat;
+}
+.description h1{
+    color: #FF7900;
+    font-size: 40px;
+    font-weight: 700;
+    padding: 50px 0 80px 0;
+}
+.description h2{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    padding: 0 0 80px 0;
+}
+.description p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.car{
+    padding-top: 50px;
+    text-align: center;
+    display: flex;
+    padding-bottom: 30px;
+    align-items: center;
+}
+/* .car img{
+
+} */
+.car h1{
+    color: black;
+    font-size: 48px;
+    font-weight: 700;
+}
+.car__title{
+    background: #FF7900;
+}
+.car h2{
+    padding: 30px 10px;
+    color: black;
+    font-size: 48px;
+    font-weight: 700;
+}
+.car p {
+    text-align: center;
+}
+.car__name{
+    color: #FF7900;
+    font-size: 48px;
+    font-weight: 500;
+    
+}
+.car__description{
+    color: black;
+    font-size: 28px;
+    font-weight: 500;
+}
+.car_characteristic-transmission, 
+.car_characteristic-transmission, 
+.car_characteristic-doors,
+.car_characteristic-drive, 
+.car_characteristic-type{
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.feedback{
+    padding: 50px 0 70px 0;
+    text-align: center;
+    display: grid;
+    background: url("./public/feedback-bg.svg");
+}
+.feedback__title{
+    margin: auto;
+    width: 450px;
+    color: #FF7900;
+    font-size: 48px;
+    font-weight: 500;
+    background: #fff;
+}
+.feedback__description p{
+    margin: 30px 0;
+    color: #B1B1B1;
+    font-size: 20px;
+    font-weight: 600;
+}
+.feedback input{
+    padding: 10px 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+.feedback button{
+    
+    
+    height: 50px;
+    background: #FF7900;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+}
+.feedback a{
+    text-decoration: none;
+    color: #fff;
+}
+.feedback__window-button-text{
+    text-align: center;
+    margin: 10px;
+}
+#zatemnenie {
+    background: rgba(102, 102, 102, 0.9);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+  }
+  #okno {
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    padding: 15px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #FF7900;
+  }
+  #zatemnenie:target {display: block;}
+  .close {
+    display: inline-block;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0 12px;
+    margin: 10px;
+    text-decoration: none;
+    background: #FF7900;
+    font-size: 14pt;
+    cursor:pointer;
+  }
+  .close:hover {background: orangered;}
+footer{
+    
+    background: #35373C;
+}
+footer h1{
+    padding: 30px 0;
+    text-align: center;
+    color: #FF7900;
+    font-size: 24px;
+    font-weight: 500;   
+}
+footer p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;   
+}
